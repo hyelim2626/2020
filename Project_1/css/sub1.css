@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* 서브1 css - sub1.css */
+
+/*css 임포트*/
+@import url(gridView.css);
+@import url(gridSet.css);
+@import url(core.css);
+@import url(common.css);
+@import url(reset.css);
+
+
+/*디자인검수*/
+#dsn {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3557px;
+    background: url(../images/subp1.jpg) no-repeat center top/1920px;
+    z-index: 999999;
+    opacity: .5;
+    /*반투명*/
+    display: none;
+    /*안보임*/
+}
+
+/*배경색상*/
+body{
+    background-color: #f8f7f7;
+}
+
+/*타이틀*/
+.tit{
+    position: absolute;
+    font-size: 2.187rem;
+    font-weight: bold;
+    color: #373737;
+    top: 60px;
+    left: 46px;
+}
+/*타이틀 박스*/
+.tbox{
+    background-color: #fff;
+    width: 1170px;
+    height: 140px;
+    margin-top: -13px;
+    margin-left: 2px;
+}
+/*옆메뉴*/
+.menu{
+    width: 250px;
+    height: 160px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #373737;
+    margin-top: -8px;
+    margin-left: 2px;
+     /*outline: 1px solid red; */
+    background-color: #fff;
+}
+.menu::after{
+    content: "";
+    display: block;
+    background-color: #373737;
+    width: 250px;
+    height: 4px;
+    top: -3px;
+    position: absolute;
+}
+.menu a{
+    font-size: 1.062rem;
+}
+.menu li{
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding-left: 34px;
+    padding-top: 21px;
+}
+/*클릭시 색변경*/
+.menu li.on a{
+    color: #acc236;
+}
+.menu li:nth-child(1)::after{
+    content:url(../images/subbtn1.png);
+    margin-left: 92px;
+}
+.menu li:nth-child(2)::after{
+    content:url(../images/subbtn2.png);
+    margin-left: 91px;
+}
+
+.h32 h3{
+    font-size: 1.062rem;
+    color: #909090;
+    margin-top: -12px;
+    margin-bottom: 17px;
+    margin-left: -4px;
+    letter-spacing: -1px
+}
+.h32 strong{
+    font-size: 1.437rem;
+    color: #373737;
+    margin-left: -4px;
+}
+/*구분선*/
+.h32 strong::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #373737;
+    top: 58px;
+    left: 7px;
+}
+
+#pic {
+    border: none;
+    margin-left: -3px;
+    margin-top: 51px;
+    opacity: 0;
+    /*처음에 안보이게*/
+}
+
+.h32 p{
+    font-size: 1.062rem;
+    color: #373737;
+    letter-spacing: -1px;
+    margin-left: -3px;
+}
+.h32 .txt1{
+    margin-top: 26px;
+}
+.h32 .txt2 {
+    margin-top: 16px;
+    line-height: 23px;
+}
+
+.h32 .txt3 {
+    margin-top: 14px;
+    line-height: 23px;
+}
+
+/*전체비율박스*/
+.h11 {
+    height: 30px;
+}
+
+.h12 {
+    height: 92px;
+    margin-bottom: 58px;
+}
+
+.h21 {
+    height: 140px;
+    margin-bottom: 60px;
+}
+
+.h31 {
+    height: 503px;
+    margin-bottom: 100px;
+}
+
+.h32 {
+    height: 503px;
+    margin-bottom: 100px;
+}
+
+.h36 {
+    height: 300px;
+}

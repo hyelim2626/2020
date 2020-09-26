@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* 고봉민김밥 서브1 미디어쿼리 - sub1media.css*/
+
+
+@media only screen and (max-width:1200px) {
+
+
+
+    .tit {
+        top: 33%;
+    }
+
+
+    .menu {
+        background-image: none;
+        background-color: #fff;
+        margin: 0;
+        width: 90%;
+        height: 50%;
+        position: relative;
+        left: 2%;
+    }
+
+    .menu::after {
+        top: 1%;
+        width: 100%;
+    }
+
+    .tbox {
+        width: 99.5%;
+        height: 100%;
+        margin-left: 0.3%;
+
+    }
+
+    .h21 {
+        height: 150px;
+        margin-bottom: 2%;
+    }
+
+    #pic {
+        width: 100%;
+    }
+
+
+
+    .h32 h3 {
+        margin-top: 0%;
+    }
+
+
+    .h32 strong::before {
+        top: 15%;
+    }
+
+}
+
+
+@media only screen and (max-width:1024px) {
+
+    .menu li {
+        padding-left: 10%;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+
+    }
+
+    .menu {
+        height: 45%;
+
+    }
+
+    .menu li:nth-child(1)::after {
+        margin-left: 45%;
+    }
+
+    .menu li:nth-child(2)::after {
+        margin-left: 45%;
+    }
+
+    .h32 p {
+        font-size: 1.2rem;
+    }
+
+    .h32 .txt1 {
+        margin-left: 0.2%;
+    }
+
+    .h32 .txt2,
+    .h32 .txt3 {
+        margin: 0;
+    }
+
+}
+
+
+@media only screen and (max-width:500px) {
+    
+    
+    
+    
+    
+}

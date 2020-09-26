@@ -1,0 +1,637 @@
+@charset "utf-8";
+/* 메인 css - main.css */
+
+/*css 임포트*/
+@import url(gridView.css);
+@import url(gridSet.css);
+@import url(core.css);
+@import url(common.css);
+@import url(reset.css);
+
+
+/*햄버거버튼*/
+.ham {
+    display: none;
+}
+
+/*****1.배너슬라이드*****/
+#ban {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 646px;
+    overflow: hidden;
+}
+
+/*ul,li모두 absolute로 겹쳐지게!*/
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*위치이동 속성*/
+    width: 400%;
+    /*4개의 슬라이드 크기*/
+    height: 100%;
+}
+
+.slider li {
+    width: 25%;
+    /*4등분*/
+    height: 100%;
+}
+
+.slider li:nth-child(1) {
+    background: url(../images/ban1.jpg) no-repeat center/auto 100%;
+}
+
+.slider li:nth-child(2) {
+    background: url(../images/ban2.jpg) no-repeat center/auto 100%;
+}
+
+.slider li:nth-child(3) {
+    background: url(../images/ban3.jpg) no-repeat center/auto 100%;
+}
+
+.slider li:nth-child(4) {
+    background: url(../images/ban4.jpg) no-repeat center/auto 100%;
+}
+
+/*****3.블릿*****/
+.indic {
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    z-index: 999;
+}
+
+.indic a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.indic li {
+    width: 50px;
+    height: 4px;
+    background-color: #cec5bc;
+    margin-left: 7px;
+}
+
+/*블릿클릭시 색변경*/
+.indic > li.on {
+    background-color: #aac133;
+}
+
+/*배너 멈춤,재생버튼*/
+.btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 51px;
+    left: 34%;
+    z-index: 999;
+}
+
+.btn li {
+    width: 100%;
+    height: 100%;
+    display: none;
+    /*처음에 안보이게*/
+}
+
+.btn li.on {
+    display: block;
+    /*클릭시 보이게*/
+}
+
+.btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sbtn {
+    background: url(../images/sbtn.png) no-repeat;
+}
+
+/*처음에 안보이게 하기*/
+.gbtn {
+    background: url(../images/gbtn.png) no-repeat;
+}
+
+
+
+/*****4.메뉴&매장찾기*****/
+#menushop a {
+    width: 100%;
+    height: 100%;
+}
+
+/*4-1.메뉴찾기*/
+.menu {
+    background: url(../images/menu.png) no-repeat;
+    width: 100%;
+    height: 354px;
+    margin-top: -14px;
+    margin-left: 2px;
+}
+
+.mbox {
+    position: absolute;
+    bottom: 13px;
+    width: 95%;
+    height: 164px;
+    background-color: #eeecec;
+    overflow: hidden
+        /*.mtxt 조정에 margin-top값에 영향을 안주게끔 설정*/
+}
+
+.mtxt {
+    font-weight: bold;
+    font-size: 1.562rem;
+    line-height: 36px;
+    margin-top: 47px;
+    margin-left: 34px;
+    letter-spacing: -1px;
+}
+
+/*재생버튼*/
+.msbtn {
+    width: 40px;
+    height: 40px;
+    background: url(../images/msbtn.png) no-repeat;
+    margin-left: 455px;
+    margin-top: -58px;
+}
+
+/*sprites-재생버튼 기본상태*/
+.msbtn:first-child {
+    background-position: 0 0;
+}
+
+/*sprites-재생버튼 오버시*/
+.kimbob:hover .msbtn {
+    background-position: -40px 0;
+    transition: all .2s ease-in-out;
+}
+
+
+
+/*하단라인 호버시 색변경*/
+.kimbob:hover .mline {
+    background-color: #aac133;
+    transition: all .2s ease-in-out;
+}
+
+/*4-2.매장찾기*/
+.shop {
+    background: url(../images/shop.png) no-repeat;
+    width: 100%;
+    height: 354px;
+    margin-top: -14px;
+    margin-left: 2px;
+}
+
+.sbox {
+    position: absolute;
+    bottom: 13px;
+    width: 95%;
+    height: 164px;
+    background-color: #eeecec;
+    overflow: hidden
+        /*.mtxt 조정에 margin-top값에 영향을 안주게끔 설정*/
+}
+
+.stxt {
+    font-weight: bold;
+    font-size: 1.562rem;
+    line-height: 36px;
+    margin-top: 47px;
+    margin-left: 34px;
+    letter-spacing: -1px;
+}
+
+/*재생버튼*/
+.msbtn {
+    width: 40px;
+    height: 40px;
+    background: url(../images/msbtn.png) no-repeat;
+    margin-left: 455px;
+    margin-top: -58px;
+}
+
+/*sprites-재생버튼 기본상태*/
+.msbtn:first-child {
+    background-position: 0 0;
+}
+
+/*sprites-재생버튼 오버시*/
+.store:hover .msbtn {
+    background-position: -40px 0;
+    transition: all .2s ease-in-out;
+}
+
+/*하단라인*/
+.mline {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #373737;
+}
+
+/*하단라인 호버시 색변경*/
+.store:hover .mline {
+    background-color: #aac133;
+    transition: all .2s ease-in-out;
+}
+
+
+
+/*****5.재료이야기*****/
+.foodinfo {
+    width: 375px;
+    height: 400px;
+    background-color: #eea91e;
+    margin-top: -14px;
+    margin-left: 2px;
+}
+
+.ftxt,
+.ftit {
+    color: #373737;
+}
+
+.foodinfo .ftit {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 61px;
+    left: 45px;
+}
+
+.ftxt {
+    font-size: 1.062rem;
+    position: absolute;
+    bottom: 86px;
+    left: 46px;
+    line-height: 28px;
+    letter-spacing: -1px;
+}
+
+/*구분선*/
+.foodinfo::after {
+    content: "";
+    display: block;
+    width: 142px;
+    height: 4px;
+    background: #373737;
+    position: absolute;
+    top: 109px;
+    left: 47px;
+}
+
+/*5-1.재료설명*/
+/*전체박스*/
+.foods {
+    margin-top: -14px;
+    margin-left: -7px;
+    width: 800px;
+    /*overflow: hidden;*/
+}
+
+/*간격*/
+.foods > li {
+    padding: 0px 15px 11px 0px;
+}
+
+.foods img {
+    width: 250px;
+    height: 200px;
+}
+
+.fbox {
+    position: relative;
+    /*부모*/
+    height: 189px;
+    overflow: hidden;
+}
+
+/*재료이름박스*/
+.ftbox {
+    position: absolute;
+    top: 155px;
+    width: 250px;
+    height: 185px;
+    font-size: 1.062rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    background: rgba(55, 55, 55, 0.9);
+    transition: top .4s ease-out;
+}
+
+/*재료이름*/
+.ftbox > h3 {
+    margin-top: 15px;
+}
+
+/*재료설명*/
+.ftbox > p {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    line-height: 22px;
+    font-weight: 100;
+}
+
+/*각 부모li에 마우스 오버시
+자식요소의 .ftbox 올라오기*/
+.foods > li:hover .ftbox {
+    top: 80px;
+}
+
+
+
+/*****6.식탁이미지*****/
+#table {
+    background: url(../images/table.png) no-repeat center/auto 735px;
+    margin-top: -63px;
+}
+
+.tbox {
+    background-color: rgba(55, 55, 55, 0.8);
+    width: 1175px;
+    height: 430px;
+    margin-top: 136px;
+    margin-left: 2px;
+    text-align: center;
+    color: #fff;
+}
+
+.ttit {
+    font-size: 3.75rem;
+    position: relative;
+    top: 124px;
+    left: -4px;
+    letter-spacing: -2px;
+}
+
+.ttxt {
+    font-size: 1.5rem;
+    margin-top: 203px;
+    line-height: 43px;
+}
+
+.tlast {
+    font-size: 1.687rem;
+    margin-top: 48px;
+    display: block;
+}
+
+/*.ttit위 줄*/
+.tbox::after {
+    content: "";
+    display: block;
+    width: 142px;
+    height: 4px;
+    background-color: #fff;
+    margin-top: -314px;
+    margin-left: 185px;
+}
+
+
+
+/*****7.프렌차이즈*****/
+.icon {
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 5%;
+    margin-top: 1%;
+}
+
+
+
+/*텍스트 설정*/
+.icont {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 1.562rem;
+    color: #373737;
+}
+
+/*텍스트 위치*/
+.icont1 {
+    margin-top: -60px;
+    margin-left: 168px;
+}
+
+.icont2 {
+    margin-top: -60px;
+    margin-left: 152px;
+}
+
+.icont3 {
+    margin-top: -67px;
+    margin-left: 168px;
+}
+
+.icont4 {
+    margin-top: -54px;
+    margin-left: 147px;
+}
+
+/*아이콘 박스*/
+.franbox1 {
+    width: 100%;
+    height: 390px;
+    background-color: #aac133;
+    margin-top: -14px;
+    margin-left: 2px;
+    border: 5px solid #373737; 
+    box-sizing: border-box;
+}
+
+/*아이콘 박스 하단라인*/
+/*.franbox1::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: #373737;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+}*/
+
+/*프렌차이즈 가이드박스*/
+.franbox2 {
+    width: 100%;
+    height: 390px;
+    background-color: #aac133;
+    margin-top: -14px;
+    margin-left: 0;
+    color: #373737;
+    text-align: center;
+    border: 5px solid #373737; 
+    box-sizing: border-box;
+}
+
+/*세로라인*/
+/*.franbox2::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 238px;
+    background-color: #373737;
+    position: absolute;
+    margin-top: 75px;
+}*/
+
+/*프렌차이즈 가이드박스 하단라인*/
+/*.franbox2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: #373737;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+}*/
+
+.frantit {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-120%) translateX(-50%);
+    line-height: 48px;
+}
+
+.frantxt {
+    position: absolute;
+    font-size: 1.187rem;
+    top: 96%;
+    left: 50%;
+    transform: translateY(-120%) translateX(-50%);
+    line-height: 27px;
+    letter-spacing: -2px;
+}
+
+/*하단에 선넣기!!*/
+/*.fline{
+    width: 100%;
+    height: 8px;
+    background-color: #373737;
+    position: absolute;
+    bottom: 0;
+}*/
+
+
+/*****8.콜센터******/
+.call {
+    width: 1175px;
+    height: 200px;
+    border: 1px solid #373737;
+    border-radius: 5px;
+    margin-top: -13px;
+}
+
+.call p {
+    font-size: 1.562rem;
+    color: #373737;
+    line-height: 40px;
+    margin-top: 3%;
+    margin-left: 43%;
+    letter-spacing: 2px;
+}
+
+.ccol {
+    color: #eea91e;
+    font-weight: bold;
+    font-size: 2.187rem;
+}
+
+
+.call img {
+    position: absolute;
+    top: 36px;
+    left: 152px;
+    /*애니메이션호출*/
+    animation: updown .3s ease-in-out .1s infinite alternate;
+}
+
+/*오르락내리락 키프레임*/
+@keyframes updown {
+    from {
+        top: 28px;
+    }
+
+}
+
+/*키프레임*/
+
+
+/*전체비율박스*/
+.h11 {
+    height: 30px;
+}
+
+.h12 {
+    height: 92px;
+}
+
+.h21 {
+    height: 526px;
+    margin-bottom: 62px;
+}
+
+#menushop {
+    margin-top: 570px;
+}
+
+.h31 {
+    height: 522px;
+    margin-bottom: 62px;
+}
+
+.h32 {
+    height: 400px;
+    margin-bottom: 60px;
+}
+
+.h33 {
+    height: 735px;
+    margin-bottom: 60px;
+}
+
+.h34 {
+    height: 390px;
+    margin-bottom: 60px;
+}
+
+.h35 {
+    height: 200px;
+    margin-bottom: 60px;
+}
+
+.h36 {
+    height: 300px;
+}
+
+/*디자인검수*/
+#dsn {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 3557px;
+    background: url(../images/mainp_over.jpg) no-repeat center top/1920px;
+    z-index: 999999;
+    opacity: .5;
+    /*반투명*/
+    display: none;
+    /*안보임*/
+}

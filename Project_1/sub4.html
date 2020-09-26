@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>고봉민김밥 매장찾기</title>
+    <link rel="stylesheet" href="css/sub4.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub4.js"></script>
+
+</head>
+
+<body>
+
+    <!--디자인검수이미지-->
+    <div id="dsn"></div>
+
+    <!--2.GNB 메뉴-->
+    <header class="inbox clb" id="top">
+        <!--2-1.탑메뉴-->
+        <div class="col-12 h11">
+            <ul class="tmenu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#" class="insta"><span class="bld">인스타</span></a>
+                    <a href="#" class="fb"><span class="bld">페북</span></a>
+                </li>
+            </ul>
+        </div>
+        <!--2-2.GNB 로고-->
+        <div class="col-2 h12">
+            <!--모바일 햄버거버튼-->
+            <div class="ham">≡</div>
+
+            <!--로고-->
+            <div class="logo">
+                <img src="images/logo.jpg" alt="고봉민김밥로고">
+                <a href="index.html" class="logoC"><span class="bld">메인페이지링크</span></a>
+            </div>
+            
+            <!--2-3.GNB 메뉴-->
+            <div class="col-10 h12 gbox">
+                <ul class="gnb">
+                    <li>
+                        <a href="sub1.html" class="bgnb">BRAND</a>
+                        <ol class="smenu">
+                            <li><a href="sub1.html">고봉민김밥</a></li>
+                            <li><a href="sub2.html">재료이야기</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="sub3.html" class="mgnb">MENU</a>
+                        <ol class="smenu">
+                            <li><a href="sub3.html">김밥류</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="sub4.html" class="sgnb">STORE</a>
+                        <ol class="smenu">
+                            <li><a href="sub4.html">가맹점찾기</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="sub5.html" class="fgnb">FRANCHISE</a>
+                        <ol class="smenu">
+                            <li><a href="sub5.html">창업절차</a></li>
+                        </ol>
+                    </li>
+                </ul>
+                <div class="gnbbox">
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <!--타이틀-->
+    <section class="inbox clb">
+        <div class="col-12 h21">
+            <div class="tbox">
+                <h2 class="tit">고봉민김밥 매장찾기</h2>
+            </div>
+        </div>
+    </section>
+    <!--지역검색박스-->
+    <section class="inbox clb">
+        <div class="col-12 h31">
+            <!--시/도 선택-->
+                <select class="sel1">
+                    <option value="">
+                        시/도 선택
+                    </option>
+                    <option value="001">
+                        서울특별시
+                    </option>
+                    <option value="002">
+                        경기도
+                    </option>
+                </select>
+                <!--구/군 선택-->
+                <select class="sel2" id="sel2">
+                    <option value="">
+                        먼저 시/도를 선택하세요
+                    </option>
+                </select>
+                <!--검색창-->
+                <div id="search">
+                    <input type="text">
+                </div>
+                <!--매장찾기버튼-->
+                <div class="sbtn"><input type="submit" id="sbtn" value="매장찾기"></div>
+            <div class="selbox"></div>
+        </div>
+    </section>
+    <!--지도-->
+    <section class="inbox clb">
+        <div class="col-12 h32 map">
+            <div id="gmap"></div>
+        </div>
+    </section>
+    <!--점포안내-->
+    <section class="inbox clb">
+        <div class="col-12 h33">
+            <!--매장명-->
+            <h3 class="line1">매장명</h3>
+            <ul class="name cn cn1">
+                <li>서울대학로점</li>
+                <li>마포역점</li>
+                <li>성동상왕십리점</li>
+            </ul>
+            <ul class="name cn cn2">
+                <li>고양화정역점</li>
+                <li>의정부역점</li>
+                <li>양주고읍점</li>
+            </ul>
+
+            <!--연락처-->
+            <h3 class="line2">연락처</h3>
+            <ul class="tell cn cn1">
+                <li>02-742-5161</li>
+                <li>02-712-0016</li>
+                <li>02-2282-0822</li>
+            </ul>
+            <ul class="tell cn cn2">
+                <li>031-963-0999</li>
+                <li>031-840-8935</li>
+                <li>031-848-1680</li>
+            </ul>
+
+            <!--주소-->
+            <h3 class="line3">주소</h3>
+            <ul class="address cn cn1">
+                <li>서울 종로구 대학로12길 21</li>
+                <li>서울 마포구 도화동 559</li>
+                <li>서울 성동구 상왕십리동 12-37</li>
+            </ul>
+            <ul class="address cn cn2">
+                <li>경기도 고양시 덕양구 화정동 967-1</li>
+                <li>경기도 의정부시 의정부1동 213-2</li>
+                <li>경기도 양주시 광사동 656-7</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--9.하단부분-->
+    <div class="info">
+        <footer class="inbox clb" id="info">
+            <div class="col-12 h36">
+                <ul class="cominfo">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">고객의소리</a></li>
+                </ul>
+
+                <address>가맹본부 부산광역시 해운대구 센텀서로 30 (우동, KNN센텀타워 2101호 - 2109호)<br>
+                    사업장주소 부산광역시 해운대구 센텀서로 30 (우동, KNN센텀타워 2101호 - 2103호)<br>
+                    상호명 : 케이비엠(KBM) 대표 : 한석균 사업자등록번호 : 607-13-74550 전화 : 1661-5052 팩스 : 051-664-6246<br>
+                    Copyright (c) Kobongmin.co.kr All Rights Reserved.</address>
+            </div>
+        </footer>
+    </div>
+
+    <!--구글맵호출-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvpFtfhEfPLtRfYVkxwa-BfpAdKB9nSK4&callback=myMap"></script>
+
+    <!--그리드뷰-->
+    <!--<ul class="grid">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>-->
+</body>
+
+</html>
