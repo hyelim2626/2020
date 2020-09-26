@@ -1,0 +1,206 @@
+@charset "utf-8";
+/* 레시피 상세페이지 미디어쿼리 - recipemedia.css*/
+
+
+/*1.1600px 이하 미디어쿼리*/
+@media only screen and (max-width:1600px) {
+
+    /*재료명*/
+    .lbox .AF,
+    .rbox .AF {
+        font-size: 5rem;
+    }
+
+    /*재료내용
+    .ibox {
+        width: 100%;
+        line-height: 1px;
+    }*/
+
+    /*재료전체*/
+    .rtxt {
+        top: 44%;
+    }
+
+    /*레시피내용*/
+    .txtright {
+        line-height: 1.3;
+        font-size: 1.3rem;
+    }
+
+    /*svg선*/
+    .line {
+        top: 35%;
+    }
+
+}
+
+/*2.1500px 이하 미디어쿼리*/
+@media only screen and (max-width:1500px) {
+
+
+    .ltxt li {
+        line-height: 23px;
+    }
+
+    /*svg*/
+    .line {
+        top: 34%;
+    }
+
+    .itit {
+        margin-bottom: 13%;
+        margin-top: 9%;
+    }
+
+}
+
+
+/*3.1400px 이하 미디어쿼리*/
+@media only screen and (max-width:1400px) {
+
+    .retit {
+        left: 53%;
+    }
+
+    .rtxt {
+        top: 42%;
+    }
+
+}
+
+/*4.500px 이하 미디어쿼리*/
+@media only screen and (max-width:500px) {
+
+    /*카테고리************************************/
+    .ccom {
+        position: relative;
+        font-size: 0.875rem;
+        top: -3px;
+    }
+
+    /*두번째 카테고리*/
+    #category > li:nth-child(2) {
+        margin-left: 5px;
+        margin-top: 1px;
+    }
+
+    .upli {
+        font-size: 1.2rem;
+        left: 2%;
+    }
+
+    #category > li {
+        margin-left: 0.5%;
+        font-size: 1.1rem;
+    }
+
+
+    /*레시피************************************/
+
+    /*이미지*/
+    .lbox {
+        width: 100%;
+        margin: 0;
+    }
+
+    /*레시피내용*/
+    .rbox {
+        position: relative;
+        height: 760px;
+        top: -4px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .rtxt {
+        top: 50%;
+    }
+
+    /*레시피만드는법*/
+    .txtright {
+        position: static;
+        line-height: 1.3;
+        width: 125%;
+        float: right;
+    }
+
+    /*레시피타이틀*/
+    .retit {
+        left: 10%;
+    }
+
+    /*재료타이틀*/
+    .AF {
+        font-size: 3.5rem;
+    }
+
+    /*재료내용*/
+    .ltxt {
+        top: 4%;
+        line-height: 2.4;
+        width: 80%;
+        left: 7%;
+    }
+
+    /*레시피 프레임*/
+    .frame {
+        width: 93%;
+        height: 95%;
+        top: 2%;
+        left: 3%;
+    }
+
+    /*svg*/
+    .line {
+        display: none;
+    }
+
+    /*와인리스트박스 아래여백주기*/
+    #pdbox {
+        margin-bottom: 10%;
+    }
+
+}
+
+
+/*5.470px 이하 미디어쿼리*/
+@media only screen and (max-width:470px) {
+
+    .lbox .AF,
+    .rbox .AF {
+        font-size: 4.5rem;
+    }
+
+
+    .ltxt li {
+        font-size: 1.2rem;
+    }
+
+    .txtright {
+        width: 138%;
+    }
+
+}
+
+/*6.400px 이하 미디어쿼리*/
+@media only screen and (max-width:400px) {
+
+    .lbox .AF,
+    .rbox .AF {
+        font-size: 4rem;
+    }
+
+    .ltxt li {
+        font-size: 1rem;
+    }
+
+    .rtxt {
+        top: 48%;
+    }
+
+    .rbox {
+        height: 700px;
+    }
+
+}

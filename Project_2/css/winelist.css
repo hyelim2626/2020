@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* 와인 리스트 css - winelist.css */
+
+/*css 임포트*/
+@import url(base.css);
+@import url(reset.css);
+@import url(common.css);
+
+
+body {
+    background-color: #282828;
+}
+
+
+
+/*4.다른상품**********************************************/
+/*타이틀-화이트와인*/
+.line1 {
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+
+.line1::after {
+    content: "";
+    display: block;
+    width: 43%;
+    height: 1px;
+    position: absolute;
+    top: 1%;
+    left: 1.3%;
+    background: #fff;
+}
+
+.line1::before {
+    content: "";
+    display: block;
+    width: 41%;
+    height: 1px;
+    position: absolute;
+    top: 1%;
+    right: 2.6%;
+    background: #fff;
+}
+
+/*타이틀-레드와인*/
+.line2 {
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    width: 75%;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.line2::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 12px;
+    right: 4%;
+}
+
+.line2::before {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 12px;
+    left: 2%;
+}
+
+
+
+/*타이틀-로제와인*/
+.line3 {
+    position: relative;
+    top: -15px;
+    display: inline-block !important;
+    width: 24%;
+    color: #fff;
+    font-size: 1.7rem;
+    display: block;
+    text-align: center;
+    
+}
+
+.line3::after {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 12px;
+    right: 7%;
+}
+
+.line3::before {
+    content: "";
+    display: block;
+    width: 20%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 12px;
+    left: 4%;
+}
+
+
+/*전체박스*/
+#listbox {
+    width: 100%;
+    /*border: 1px dotted lime;*/
+}
+
+#listbox2 {
+    width: 75%;
+    float: left;
+    margin-top: 1%;
+}
+
+#listbox3 {
+    width: 25%;
+    float: left;
+    margin-top: 1%;
+}
+
+#list {
+    margin-left: 1.2%;
+    height: 155%;
+}
+
+#list ol {
+    position: relative;
+    /*부모자격*/
+
+}
+
+.outb {
+    /*border: 1px dotted red;*/
+    width: 25%;
+    text-align: center;
+}
+
+/*하단리스트 별도적용!*/
+
+#listbox2 .outb {
+    width: 33.333%;
+}
+
+#listbox3 .outb {
+    width: 100%;
+}
+
+
+
+.listbox > a {
+    /*border: 1px dotted orange;*/
+}
+
+/*상품공통이미지*/
+.pimg {
+    width: 85%;
+}
+
+.inb {
+    background-color: #191919;
+    width: 85%;
+    margin-left: 5%;
+    margin-bottom: 16%;
+}
+
+
+.dotw,
+.dote,
+.dotr {
+    font-size: 1.5rem;
+    padding-top: 8%;
+}
+
+.AF {
+    font-size: 2.3rem;
+    display: block;
+    padding-bottom: 5%;
+    color: #fff;
+    font-style: normal;
+    display: block;
+    text-align: center;
+}
+
+/*공통점*/
+.dot::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/*윗줄 점 위치*/
+.dotup::after{
+    margin-top: -1.15%;
+    margin-left: 4.5%;
+}
+/*아랫줄 점 위치*/
+.dotdown::after{
+    margin-top: -1.05%;
+    margin-left: 5.1%;
+}
+
+/*화이트와인 점*/
+.dotw::after{
+    background-color: #fbd4a1;
+}
+/*로제와인 점*/
+.dote::after{
+    background-color: #fbafa4;
+}
+/*레드와인 점*/
+.dotr::after{
+    background-color: #bc0a0a;
+}
+
+
+
+
+/*6.레시피*******************************************/
+#rtit {
+    color: #fff;
+}
+
+.viewmore {
+    color: #fff;
+}
+
+#recipebox > li > p {
+    color: #fff;
+}

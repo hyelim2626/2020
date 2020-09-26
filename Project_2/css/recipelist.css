@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* 레시피 리스트 css - recipelist.css */
+
+/*css 임포트*/
+@import url(base.css);
+@import url(reset.css);
+@import url(common.css);
+
+
+body {
+    background-color: #282828;
+    overflow: hidden;
+}
+
+/*전체박스*/
+#listbox {
+    width: 100%;
+    margin-top: 6%;
+    margin-left: 7%;
+    /*border: 1px dotted lime;*/
+}
+#listbox2 {
+    width: 100%;
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-bottom: 5%;
+}
+
+#list {
+    margin-left: 1.2%;
+    height: 100%;
+}
+
+.outb {
+    position: relative;
+    width: 25%;
+    margin-left: -2%;
+    margin-top: -6px;
+    perspective: 1205px;/*원근*/
+    /*border: 1px dotted red;*/
+}
+
+.outb>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-in-out;
+    transform-style: preserve-3d;/*3D*/
+}
+
+
+.outb:hover a{
+    transform: rotateY(38deg);
+}
+
+
+#listbox .outb.on a{
+    transform: rotateY(38deg);
+}
+
+#listbox2 .outb.on a{
+    transform: rotateY(-38deg);
+}
+
+
+/*상품공통이미지*/
+.rpic {
+    width: 85%;
+}
+
+/*상품공통타이틀*/
+.rname {
+    left: 45%;
+    top: 50%;
+    font-size: 2rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menada Winery - recipe</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/class.css">
+    <link rel="stylesheet" href="css/recipe.css">
+    <link rel="stylesheet" href="css/commedia.css">
+    <link rel="stylesheet" href="css/sub1media.css">
+    <link rel="stylesheet" href="css/recipemedia.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-touch-punch.min.js"></script>
+    <script src="js/jquery.rotate.js"></script>
+    <script src="js/jquery.smoothwheel.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/recipe.js"></script>
+</head>
+
+<body>
+    <!--메뉴-->
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">WINE</a></li>
+            <li><a href="index.html">GRAPE VARIETIES</a></li>
+            <li><a href="#">RECIPES</a></li>
+            <li><a href="#">CONTECT</a></li>
+            <!--<img src="images/menada-cat_thumb-cover.jpg" alt="와인사진" id="menupic">-->
+        </ul>
+    </nav>
+    <!--닫기버튼-->
+    <img src="images/close_.png" alt="닫기버튼" id="cbtn">
+
+
+    <!--사이트커버-->
+    <div id="scover"></div>
+
+    <!--전체가림막-->
+    <div id="tcover"></div>
+
+    <!--smoothwheel용 wrap-->
+    <div id="wrap">
+
+        <!--1.상단영역-->
+        <div class="top">
+            <h1 class="bld">MENADA WINERY</h1>
+            <header id="top" class="inbox clb">
+
+                <!--로고-->
+                <img id="logo" src="images/logoS.png" alt="로고">
+
+                <!--메뉴버튼-->
+                <div id="mbtn" class="btn">
+                    <a href="#"><span class="bld">메뉴버튼</span></a>
+                    <p class="ALL">ALL</p>
+                </div>
+
+            </header>
+        </div>
+
+        <!--2.카테고리-->
+        <div>
+            <h2 class="bld">category</h2>
+            <section class="inbox clb">
+                <ul id="category">
+                    <li><a href="index.html" class="ccom">Home</a> / </li>
+                    <li><a href="recipelist.html" class="ccom">Recipe</a> / </li>
+                    <li><a href="#" class="txt upli">White Sangria</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <!--3.레시피-->
+        <div>
+            <h2 class="bld">White Sangria</h2>
+            <section class="inbox clb">
+                <ul class="recipebox">
+                    <!--레시피 이미지 (왼쪽)-->
+                    <li class="lbox">
+                        <div>
+                            <h3><span class="AF">White Sangria</span></h3>
+                            <img src="images/white-sangria_thumb-detail.jpg" alt="white-sangria" class="rec">
+                        </div>
+                    </li>
+                    <!--레시피정보 (오른쪽)-->
+                    <li class="rbox">
+                        <div class="frame"></div>
+                        <ol class="ltxt">
+                            <li class="itit AF">Ingredients</li>
+                            <li><span class="txt">MAKES 8 COCKTAILS</span></li>
+                            <li><span class="txt">1 BOTTLE OF DRY WHITE WINE</span></li>
+                            <li><span class="txt">3 SHOTS OF APPLE LIQUEUR</span></li>
+                            <li><span class="txt">2 LEMONS CUT INTO SLICES</span></li>
+                            <li><span class="txt">2 RIPE PEACHES CUT INTO PIECES</span></li>
+                            <li><span class="txt">3 RIPE GREEN APPLES CUT INTO PIECES</span></li>
+                            <li><span class="txt">0.5 CUP OF RASPBERRIES</span></li>
+                        </ol>
+                        <svg height="300" width="550" class="line">
+                            <line x1="10" y1="200" x2="300" y2="50" />
+                        </svg>
+                        <ul class="rtxt">
+                            <li class="retit AF">Recipe</li>
+                            <li class="txt txtright">Mix all ingredients and allow to chill in the fridge for 2 hours. Add ice cubes and serve with slices of lemon.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+        <!--6.다른상품-->
+        <div>
+            <section class="inbox clb">
+                <div class="box">
+                    <h3 id="otit">Other products</h3>
+                    <a href="#" class="viewmore wineM">viewmore</a>
+                </div>
+                <div class="swiper-container">
+                    <ul id="pdbox" class="swiper-wrapper">
+
+                        <li class="swiper-slide">
+                            <div class="inb">
+                                <a href="#">
+                                    <p class="dotw dotup dot">White wine 750ml</p>
+                                    <img src="images/menada-sauvignion-blanc_thumb-detail.png" alt="sauvignion-blanc" class="pimg">
+                                    <em class="AF">Sauvignion Blanc</em>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="inb">
+                                <a href="#">
+                                    <p class="dotw dotup dot">White wine 750ml</p>
+                                    <img src="images/menada-traminer_thumb-detail.png" alt="traminer" class="pimg">
+                                    <em class="AF">Traminer</em>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <div class="inb">
+                                <a href="#">
+                                    <p class="dotw dotup dot">White wine 750ml</p>
+                                    <img src="images/menada-muscat_thumb-detail.png" alt="muscat" class="pimg">
+                                    <em class="AF">Muscat</em>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <div class="inb">
+                                <a href="#">
+                                    <p class="dotw dotup dot">White wine 750ml</p>
+                                    <img src="images/menada-chardonay_thumb-detail.png" alt="chardonay" class="pimg">
+                                    <em class="AF">Chardonay</em>
+                                </a>
+
+                            </div>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <div class="inb">
+                                <a href="#">
+                                    <p class="dotr dotdown dot">Red wine 750ml</p>
+                                    <img src="images/menada-merlot_thumb-detail.png" alt="merlot" class="pimg">
+                                    <em class="AF">Merlot</em>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <div class="inb">
+                                <a href="#">
+                                    <p class="dotr dotdown dot">Red wine 750ml</p>
+                                    <img src="images/menada-cabernet-sauvignon_thumb-detail.png" alt="cabernet-sauvignon" class="pimg">
+                                    <em class="AF">Cabernet Sauvignon</em>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="inb">
+                                <a href="#">
+                                    <p class="dotr dotdown dot">Red wine 750ml</p>
+                                    <img src="images/menada-mavrud_thumb-detail.png" alt="mavrud" class="pimg">
+                                    <em class="AF">Mavrud</em>
+                                </a>
+                            </div>
+                        </li>
+
+
+                        <li class="swiper-slide">
+                            <div class="inb">
+                                <a href="#">
+                                    <p class="dote dotdown dot">Rosé wine 750ml</p>
+                                    <img src="images/menada-rose_thumb-detail.png" alt="rose" class="pimg">
+                                    <em class="AF">Cabernet Sauvignon</em>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+
+
+
+        <!--7.회사정보-->
+        <div>
+            <h2 class="bld">contect</h2>
+            <footer class="inbox clb">
+                <div id="footlogo">
+                    <img src="images/footlogo.jpg" alt="footer logo">
+                    <p>All rights reserved Copyright ® 2020</p>
+                </div>
+                <div id="contect">
+                    <div class="cinfo">
+                        <b class="contT">CONTECT US</b>
+                        <div><img src="images/call.png" alt="call icon" class="cicon">
+                            <p class="cp">+359 24899450</p>
+                        </div>
+                        <div> <img src="images/mail.png" alt="mail icon" class="cicon">
+                            <p class="cp">office.bulgaria@mbws.com</p>
+                        </div>
+                        <div><img src="images/pin.png" alt="pin icon" class="cicon">
+                            <p class="cp">Address: Sofia, “Mladost” 4, Business park</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--wrap-->
+</body></html>

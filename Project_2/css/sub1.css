@@ -1,0 +1,405 @@
+@charset "utf-8";
+/* 서브1 css - sub1.css */
+
+/*css 임포트*/
+@import url(base.css);
+@import url(reset.css);
+@import url(common.css);
+
+
+
+body {
+    background-color: #282828;
+}
+
+
+/*와인이미지 키프레임*/
+@keyframes wineGo{
+    to{
+        left: 0%;
+    }
+} /*키프레임*/
+
+
+/*2.카테고리*/
+#category {
+    position: relative;
+    /*margin-top: 1%;*/
+    margin-left: 3%;
+    padding-bottom: 1%;
+}
+
+.upli {
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    top: -2px;
+}
+
+#category > li {
+    margin-left: 0.3%;
+    font-size: 1.5rem;
+    color: #a7a7a7;
+}
+
+.ccom {
+    font-size: 1.7rem;
+    color: #a7a7a7;
+}
+
+
+/*3.상세페이지*/
+/*와인이미지*/
+.winebx {
+    position: relative;
+    /*부모자격*/
+}
+
+.lbox {
+    margin-left: 1%;
+    width: 29%;
+    background-color: #fff;
+    position: relative;
+}
+
+.wine {
+    width: 96%;
+    left: -65%;
+    position: relative;
+    animation: wineGo .6s ease-out .4s forwards;
+}
+
+/*상세설명*/
+.wineinfo {
+    position: absolute;
+    /*부모? .winebx*/
+    right: 1%;
+    background-color: #151515;
+    width: 67%;
+    width: 67%;
+    height: 100%;
+}
+
+.label {
+    /*border: 1px solid red;*/
+    text-align: center;
+    float: left;
+    width: 38%;
+    margin: 16% 5%;
+}
+
+.label > h3 {
+    font-weight: normal;
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+
+/*글자가 하나일때 설정*/
+.label > h3.one > span:last-of-type {
+    display: block;
+    margin-top: -60px;
+}
+
+.label > p {
+    font-size: 2.5rem;
+    padding-top: 5%;
+}
+
+.label > p > i {
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.detail {
+    /* width: 35%;*/
+    /*background-color: #fff;*/
+}
+
+.detail > ol {
+    width: 14%;
+    float: left;
+    /*border: 1px dotted #fff;*/
+    position: absolute;
+    top: 17%;
+    left: 43%;
+    line-height: 200%;
+    font-size: 1.6rem;
+    /*color: #ccc;*/
+}
+
+.detail > ol > li {
+    position: relative;
+}
+
+/*가상요소 선넣기*/
+.detail > ol > li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 380%;
+    height: 1px;
+}
+
+/*두줄내용 칸늘리기*/
+
+.oline1 {
+    line-height: 76px;
+}
+
+.oline2 {
+    line-height: 69px;
+}
+
+.uline1 {
+    margin-top: 2%;
+    line-height: 29px;
+}
+
+.uline2 {
+    line-height: 122%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.uline3 {
+    margin-top: 2%;
+    line-height: 135%;
+}
+
+.detail > ol > li:last-child::after {
+    display: none;
+}
+
+/*와인별 색상 셋팅*/
+.detail > ol.wc0 > li::after {
+    background-color: #f7ce58;
+}
+
+.detail > ol.wc1 > li::after {
+    background-color: #b2c800;
+}
+
+.detail > ol.wc2 > li::after {
+    background-color: #f55805;
+}
+
+.detail > ol.wc3 > li::after {
+    background-color: #0075a3;
+}
+
+.detail > ol.wc4 > li::after {
+    background-color: #ba052a;
+}
+
+.detail > ol.wc5 > li::after {
+    background-color: #a10056;
+}
+
+.detail > ol.wc6 > li::after {
+    background-color: #723da0;
+}
+
+.detail > ol.wc7 > li::after {
+    background-color: #ffb7ad;
+}
+
+
+
+/*오른쪽내용*/
+.detail > ul {
+    width: 30%;
+    position: absolute;
+    /*border: 1px solid lime;*/
+    left: 62%;
+    top: 17%;
+    font-size: 1.6rem;
+    line-height: 200%;
+    /*color: #fff;*/
+}
+
+.detail > ol > li,
+.detail > ul > li {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.detail > ol > li {
+    position: relative;
+}
+
+/*테두리색 지정*/
+.wineinfo::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 96%;
+    height: 90%;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+}
+
+
+/*와인별 색상 셋팅(테두리)*/
+.wineinfo.wc0::after {
+    border-color: #f7ce58;
+}
+
+.wineinfo.wc1::after {
+    border-color: #b2c800;
+}
+
+.wineinfo.wc2::after {
+    border-color: #f55805;
+}
+
+.wineinfo.wc3::after {
+    border-color: #0075a3;
+}
+
+.wineinfo.wc4::after {
+    border-color: #ba052a;
+}
+
+.wineinfo.wc5::after {
+    border-color: #a10056;
+}
+
+.wineinfo.wc6::after {
+    border-color: #723da0;
+}
+
+.wineinfo.wc7::after {
+    border-color: #ffb7ad;
+}
+
+
+/*4.다른상품**********************************************/
+/*타이틀*/
+#otit {
+    color: #fff;
+    margin: 2%;
+    font-size: 7rem;
+}
+
+
+/*전체박스*/
+#pdbox {
+    /*width: 170%;
+    height: 50%;
+    border: 1px dotted lime;*/
+}
+
+#pdbox > li {
+    /*margin-left: -0.8%;*/
+}
+
+/*공통점*/
+/*#pdbox > li > .inb p::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 12.5%;
+    left: 50%;
+    transform: translateX(-600%);
+}*/
+
+
+.dotw,
+.dote,
+.dotr {
+    font-size: 1.5rem;
+    padding-top: 8%;
+}
+
+/*공통점*/
+.dot::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/*윗줄 점 위치*/
+.dotup::after{
+    margin-top: -3.8%;
+    margin-left: 25%;
+}
+/*아랫줄 점 위치*/
+.dotdown::after{
+    margin-top: -3.8%;
+    margin-left: 27%;
+}
+
+/*화이트와인 점*/
+.dotw::after{
+    background-color: #fbd4a1;
+}
+/*로제와인 점*/
+.dote::after{
+    background-color: #fbafa4;
+}
+/*화이트와인 점*/
+.dotr::after{
+    background-color: #bc0a0a;
+}
+
+
+
+#pdbox > li > div > a > p {
+    text-align: center;
+    font-size: 1.2rem;
+    /*margin-top: 5%;*/
+    color: #fff;
+    display: block;
+    /*border: 1px solid blue;*/
+    /*white-space: nowrap;*/
+}
+
+#pdbox > li > div > a > em {
+    color: #fff;
+    font-size: 2.5rem;
+    font-style: normal;
+    display: block;
+    text-align: center;
+}
+
+/*상품공통이미지*/
+.pimg {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-top: -1%; */
+    width: 65%;
+    /* border: 1px solid red;*/
+}
+
+#pdbox > li > .inb {
+    /*border: 1px solid #fff;*/
+    margin: 5% 5% 5% 5%;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    background-color: #191919;
+}
+
+
+
+/*6.레시피*******************************************/
+#rtit {
+    color: #fff;
+}
+
+.viewmore {
+    color: #fff;
+}
+
+#recipebox > li > p {
+    color: #fff;
+}

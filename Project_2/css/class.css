@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* 클래스 셋팅 css - class.css */
+
+/*2개*/
+.pt2a>li:first-child{
+    width: 55%;
+/*    outline: 1px solid red;*/
+    z-index: 999999;
+}
+.pt2a>li:last-child{
+    width: 45%;
+/*    outline: 1px solid red;*/
+    z-index: 999999;
+}
+.pt2b>li:first-child{
+    width: 45%;
+/*    outline: 1px solid red;*/
+    z-index: 999999;
+}
+.pt2b>li:last-child{
+    width: 55%;
+/*    outline: 1px solid red;*/
+    z-index: 999999;
+}
+
+/*3개*/
+.pt3>li{
+    width: 33.333%;
+    border: 1px solid red;
+}
+
+/*4개*/
+.pt4>li{
+    width: 20%;
+    border: 1px solid pink;
+}
+
+/*두줄*/
+/*.line2{
+    width: 100%;
+    text-align: center;
+    outline: 1px solid lime;
+    float: left;
+}*/
+
+/*AbrilFatface 적용*/
+.AF{
+    font-family: AbrilFatface;
+    font-style: normal;
+}
